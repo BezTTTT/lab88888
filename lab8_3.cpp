@@ -1,10 +1,17 @@
 #include<iostream>
 using namespace std;
 
-char before(char x){
+char before(char alp){
 	//Write your function definition here
+	if(alp>65 && alp<=90){
+		alp = alp-1;
+		return alp;
+	}if(alp == 65){
+		return alp+25;
+	}else{
+		return '0';
+	}
 }
-
 int main(){
 	//Test Case
 	cout << before('A') << "\n";
